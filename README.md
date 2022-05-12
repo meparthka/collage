@@ -1,6 +1,6 @@
 # Fetch data | Deno.
 
-## Run with out clone
+## Run without clone
 
 ### HTTP Server
 ```console
