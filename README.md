@@ -1,22 +1,32 @@
-# Fetch data | Deno.
+# Read and write files | Deno.
 
-## Run with out clone
+## Run without clone
 
-### HTTP Server
+### Write File
 ```console
-deno run --allow-net --allow-read https://raw.githubusercontent.com/elparthka/collage/day-5/index.ts
+deno run --allow-net --allow-write https://raw.githubusercontent.com/elparthka/collage/day-6/write.ts
+```
+
+### Read File
+```console
+deno run --allow-net --allow-read https://raw.githubusercontent.com/elparthka/collage/day-6/read.ts
 ```
 
 
 ## Clone Repo.
 ```console
-git clone --branch=day-5 https://github.com/elparthka/collage.git
+git clone --branch=day-6 https://github.com/elparthka/collage.git
 cd collage
 ```
 
 ## Run
 
-### HTTP Server
+### Write File
 ```console
-deno run --allow-net --allow-read index.ts
+deno run --allow-net --allow-write write.ts
+```
+
+### Read File
+```console
+deno run --allow-net --allow-read read.ts
 ```
