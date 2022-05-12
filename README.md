@@ -3,19 +3,19 @@
 ### Install Node.js using the command line
 
 ```console
-$ sudo snap install node --classic
+sudo snap install node --classic
 ```
 
 ### Install Deno using the command line
 
 ```console
-$ sudo snap install deno
+sudo snap install deno
 ```
 
 ### Install VS Code using the command line
 
 ```console
-$ sudo snap install code --classic
+sudo snap install code --classic
 ```
 
 ## Denorest, Deno Lightweight Framework For REST API .
