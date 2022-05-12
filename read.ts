@@ -5,6 +5,6 @@ for (const u of jsond) {
     console.log("Id: " + u.id);
     console.log("Name: " + u.name);
     console.log("Em@il: " + u.email);
-    console.log("Em@il: " + u.email);
+    console.log("Phone: " + u.phone);
     console.log("--------------------------------");
 }
