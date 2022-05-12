@@ -9,12 +9,23 @@
         *{
             font-family: ubuntu;
             font-weight: lighter;
-            color: #fff;
-            background: gray;
         }
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <h2>multipart/form-data: </h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <input type="text" name="name" id="" placeholder="Name">
+        <input type="text" name="username" id="" placeholder="Username">
+        <input type="password" name="password" id="" placeholder="Password">
+        <input type="submit" value="Submit">
+    </form>
+    <h2>application/x-www-form-urlencoded: </h2>
+    <form action="" method="post" enctype="application/x-www-form-urlencoded">
+        <input type="text" name="name" id="" placeholder="Name">
+        <input type="text" name="username" id="" placeholder="Username">
+        <input type="password" name="password" id="" placeholder="Password">
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>

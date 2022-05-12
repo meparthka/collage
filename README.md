@@ -1,20 +1,20 @@
-# Make HTTPS Server | Deno.
+# Inspecting the incoming request  | Deno.
 
 ## Run with out clone
 
 ### HTTP Server e.g. 1
 ```console
-deno run --allow-net --allow-read https://raw.githubusercontent.com/elparthka/collage/day-3/index.ts
+deno run --allow-net --allow-read https://raw.githubusercontent.com/elparthka/collage/day-4/index.ts
 ```
 
 ### HTTP Server e.g. 2
 ```console
-deno run --allow-net --allow-read https://raw.githubusercontent.com/elparthka/collage/day-3/html.ts
+deno run --allow-net --allow-read https://raw.githubusercontent.com/elparthka/collage/day-4/html.ts
 ```
 
 ## Clone Repo.
 ```console
-git clone --branch=day-3 https://github.com/elparthka/collage.git
+git clone --branch=day-4 https://github.com/elparthka/collage.git
 cd collage
 ```
 
