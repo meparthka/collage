@@ -1,6 +1,6 @@
 # Make HTTP Server | Deno.
 
-## Run with out clone
+## Run without clone
 
 ### HTTP Server e.g. 1
 ```console
