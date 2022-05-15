@@ -1,4 +1,4 @@
-import { Router, Req, Res } from "https://deno.land/x/denorest@v2.0/mod.ts"
+import { Router, Req, Res, bodyParse } from "https://deno.land/x/denorest@v2.0/mod.ts"
 
 const r = new Router();
 
@@ -41,7 +41,11 @@ r2.all("/", (req: Req, res: Res) => {
     }
 })
 
-r2.all("/:postid", (req: Req, res: Res) => {
+r2.post("/:postid", async (req: Req, res: Res) => {
+    const body = await bodyParse(req);
+    console.log(body.value("name"));
+    console.log(body.value("username"));
+    console.log(body.value("password"));
     res.reply = {
         "api": "v2/post/:postid"
     }

@@ -39,7 +39,6 @@ r1.use((req: Req, res: Res) => {
         ...res.headers,
         "Router": "r1"
     }
-    res.reply = "123"
 })
 r1.all("/username/:newusername", (req: Req, res: Res) => {
     res.reply = {
