@@ -1,4 +1,4 @@
-import { Router, Req, Res } from "https://deno.land/x/denorest@v2.0/mod.ts"
+import { Router, Req, Res, pathParse } from "https://deno.land/x/denorest@v2.0/mod.ts"
 
 const r = new Router();
 
@@ -40,11 +40,17 @@ r1.use((req: Req, res: Res) => {
         "Router": "r1"
     }
 })
+
+const getUserName = (req: Req, res: Res) => {
+    req.state.username = pathParse(req).params.newusername
+}
+
 r1.all("/username/:newusername", (req: Req, res: Res) => {
     res.reply = {
-        "api": "v3/setting/username/:newusername"
+        "api": "v3/setting/username/" + req.state.username
     }
-})
+}, [getUserName])
+
 r1.all("/password", (req: Req, res: Res) => {
     res.reply = {
         "api": "v3/setting/password"
